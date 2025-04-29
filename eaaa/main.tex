@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.1 (February 24, 2025)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+\newcommand{\tightentrywithorg}[2]{%
+  \noindent
+  \begin{tabular}{@{}p{1.6cm}p{0.7\linewidth}@{}} % Adjust 2.5cm width as needed
+    \textbf{#1} & #2
+  \end{tabular}
+  \vspace{0.3em} % Space between entries
+}
+
+\newcommand{\tightentry}[1]{%
+  \par\noindent{#1}\par\vspace{0.2em}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % Left column with your name and title, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short: use just one of the lines below
+	% If your name is very long: reduce the font size or make the current column wider (and reduce the others proportionately)
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Jack}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Edge}}}}} % Last name
+	
+	\vspace{6pt} % Vertical whitespace
+	
+	{\huge Research Paramedic} % Career or current job title
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.27\textwidth} % Center column with the first column of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome5.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{London/Berlin}\\
+	\icon{Phone}{12}{+44 7878 584 035}\\
+	\icon{At}{12}{\href{mailto:hello@jmge.io}{hello@jmge.io}}\\	
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.27\textwidth} % Right column with the first column of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome5.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://img.jmge.io}{img.jmge.io}}\\
+	\icon{Github}{12}{\href{https://github.com/jackgedge}{github.com/jackgedge}}\\
+	\icon{Twitter}{12}{\href{https://x.com/jackgedge}{@jackgedge}}\\
+\end{minipage}
+
+\vspace{0.3cm} % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.6\textwidth} % Left column with the introduction text, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Who Am I?}
+	\vspace{-0.5em}
+
+	Data enthusiast. In the final year of my MSc completing a systematic review in Python and LaTeX. Back after two years on a remote coral atoll, building data pipelines and teaching IT literacy on a refugee project. Keen to deepen my statistical-modelling skills, gain experience in UK research and — true to my paramedic roots — help turn data into evidence-based improvements in pre-hospital care.
+	\\ % Dummy text
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.38\textwidth} % Right column with the skills bar chart, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\begin{barchart}{5.5} % The parameter to the barchart environment is the maximum width (in cm) of the longest bar
+		\baritem{Resuscitation}{80}
+		\baritem{Python}{70}
+		\baritem{Excel}{60}
+		\baritem{Cycling}{70}
+		\baritem{Photography}{65}
+		\baritem{LaTeX}{30}
+	\end{barchart}
+\end{minipage}
+
+% Output a series of bubbles showing your proficiency with environments and/or tools
+% \begin{center}
+%	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender} % Each bubble must be in the format of '<size>/<label>' and you can specify as many bubbles as will fit on the page
+% \end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.61\textwidth}
+	\vspace{-\baselineskip}
+	
+	\cvsect{Experience}
+
+	\begin{entrylist}
+		\entry
+			{3/2023 11/2024}
+			{Advanced Life Support Paramedic}
+			{Response-Med, Diego Garcia, BIOT}
+			{For two years I provided 24/7 critical and primary care to a remote community of Tamil refugees, working in a multidisciplinary team while handling highly sensitive records in real time. Seeing that no data were being captured, I designed and ran a Microsoft 365 patient-record system and an Excel disease-surveillance database—robust enough for austere conditions yet simple for non-technical colleagues. Each week I extracted, cleaned and analysed clinical and operational data in Python, R and Excel, producing concise reports that guided local decisions and informed international partners; a UNHCR briefing drawn from this work was later cited by the BBC. I set up rapid-reporting workflows for ad-hoc requests, helped write SOPs, and introduced a 24-hour rota to protect documentation quality and service continuity. Day-to-day duties included strict infection-control, equipment checks, and inventory management to keep the clinic mission-ready, all while delivering culturally sensitive care and mental-health first aid to a population shaped by trauma.\\ \texttt{Python}\slashsep\texttt{Microsoft 365}\slashsep\texttt{Remote Medicine}}
+		\entry
+			{5/2021 Now\\\footnotesize{part time}}
+			{Emergency Care Paramedic}
+			{Kingston ED Resus, London, UK}
+			{Lead role in a busy resuscitation area, bridging the gap between ambulance crews and critical care teams. Translating pre-hospital handovers into clear in-hospital care plans. Immersed in a new clinical environment—with complex patients, unfamiliar equipment and strict documentation standards—I actively seek feedback, learn rapidly and share what I learn with colleagues. I stay calm under pressure while co-ordinating multidisciplinary responses, double-checking drug calculations and device settings, and ensuring every detail is logged accurately in NHS electronic records.\\ 
+			\texttt{Collaboration}\slashsep\texttt{Detail}\slashsep\texttt{Emergency Department}}
+		\entry
+			{3/2016 \\2/2024\\\footnotesize{part time}}
+			{Paramedic}
+			{London Ambulance Service, pan-London, UK}
+			{Responded across London—solo and with a crewmate—to critical medical and trauma calls, delivering first-on-scene interventions and safe transfers. The work sharpened calm, patient-first communication in every setting and required ePCRs completed to audit standard before shift close. I mentored new clinicians in advanced triage, rapid decision-making and evidence-based care—embodying EAAA’s “Together we save lives” spirit. One incident (bus-vs-pedestrian on Oxford Street) earned me an Excellence Report, praising my scene leadership, assertive yet respectful communication, and creation of a calm working environment under intense public scrutiny.\\ \texttt{Resuscitation}\slashsep\texttt{Mentorship}\slashsep\texttt{Pre-Hospital Care}}
+			
+	\end{entrylist}
+	\end{minipage}
+	\hfill % Automatic horizontal whitespace
+	\begin{minipage}[t]{0.365\textwidth} % Right column width
+		\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+		\cvsect{Education}
+
+		\begin{entrylist}
+			\entry
+				{2024 \\Now}
+				{Master's Degree\\Emergency \& Resuscitation Medicine}
+				{\\Queen Mary, University of London}
+				{\textit{“Does motivation matter? A systematic review and meta-analysis of outcomes following intentional foreign object ingestion”}. For a peer-reviewed journal.}
+			\entry
+				{2020\\2022}
+				{Graduate Diploma\\Emergency \& Resuscitation Medicine}
+				{\\Queen Mary, University of london}
+				{Distinction}
+			\entry
+				{2007\\2013}
+				{Foundation Degree\\Paramedic Science}
+				{\\St George's, University of London}
+				{Merit}
+		\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL QUALIFICATIONS
+%----------------------------------------------------------------------------------------
+
+	\vspace{-1.5em}
+		\cvsect{Data}
+			\vspace{-0.5em} % remove whitespace below title
+
+			\tightentrywithorg{Microsoft}{Azure Fundamentals (AZ-900)}
+			\tightentrywithorg{Google}{IT Support Professional Certification}
+			\tightentrywithorg{IBM}{Introduction to Data Engineering}
+			\tightentrywithorg{}{Python for Data Science, AI \& Development}
+			\tightentrywithorg{Harvard}{CS50x Introduction to Computer Science (ongoing)}
+
+			\vspace{-1.3em}
+		\cvsect{Clinical}
+			\vspace{-0.5em}
+
+			\tightentrywithorg{AHA}{PALS Provider}
+			\tightentrywithorg{}{ACLS Provider}
+			\tightentrywithorg{UKRC}{ALS}
+			\tightentrywithorg{OPITO}{BOSIET}
+
+			\vspace{-1.3em}
+		\cvsect{Memberships}
+			\vspace{-0.5em}
+			
+			\tightentrywithorg{HCPC}{UK Registered Paramedic (PA40515)}
+			\tightentrywithorg{DVLA}{A, B, C1 Licences}
+			\tightentrywithorg{IAM}{Institute of Advanced Motorists (51320581)}
+			\tightentrywithorg{MCPara}{Member College of Paramedics (CP008451)}
+
+	\end{minipage}
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.2\textwidth} % Left column width
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	\vspace{-0.5em}
+
+	\textbf{English} - native\\
+	\textbf{German} - proficient\\
+	\textbf{Spanish} - rudimentary
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.3\textwidth} % Center column width
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	\vspace{-0.5em}
+
+	I love wildlife and portrait - capturing biology in motion. Bicycles, cycling, computers, tech, lifting weight and meditation too.
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.365\textwidth} % Right column width
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Non profit}
+	\vspace{-0.5em}
+	
+	I’ve volunteered in Calais’ “Jungle” refugee camp, completed charity bike rides and a high-rise zip-line, and travelled to Malawi to help build a remote school.
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

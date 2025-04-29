@@ -1,0 +1,43 @@
+.DS_Store
+sections/
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# Ignore build artifacts inside sections/
+sections/*.aux
+sections/*.log
+sections/*.out
+sections/*.toc
+sections/*.lof
+sections/*.lot
+sections/*.fls
+sections/*.fdb_latexmk
+sections/*.synctex.gz
+sections/*.bbl
+sections/*.blg
+sections/*.nav
+sections/*.snm
+sections/*.vrb
+sections/*~
+
+# Output files
+
+# Backup files
+*~
+*.bak
+*.backup
+*.tmp
